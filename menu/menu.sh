@@ -17,15 +17,15 @@ DAY=$(date +%A)
 DATE=$(date +%m/%d/%Y)
 DATE2=$(date -R | cut -d " " -f -5)
 MYIP=$(wget -qO- ifconfig.me)
-Isadmin=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/permission/main/ipmini | grep $MYIP | awk '{print $5}')
-Exp2=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+Isadmin=$(curl -sS https://raw.githubusercontent.com/retrivp/permission/main/ipmini | grep $MYIP | awk '{print $5}')
+Exp2=$(curl -sS https://raw.githubusercontent.com/retrivp/permission/main/ipmini | grep $MYIP | awk '{print $3}')
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
-Name=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/retrivp/permission/main/ipmini | grep $MYIP | awk '{print $2}')
 ipsaya=$(wget -qO- ifconfig.me)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/Ahmadgrp/permission/main/ipmini"
+data_ip="https://raw.githubusercontent.com/retrivp/permission/main/ipmini"
 checking_sc() {
 useexp=$(curl -sS $data_ip | grep $ipsaya | awk '{print $3}')
 if [[ $date_list < $useexp ]]; then
@@ -57,16 +57,16 @@ echo -e "KODE SALAH SILAHKAN MASUKKAN ULANG KODENYA"
 key
 fi
 clear
-LIST=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/license/main/key | grep $kode | awk '{print $2}')
-Key=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/license/main/key | grep $kode | awk '{print $3}')
-KEY2=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/license/main/key | grep $kode | awk '{print $4}')
-ADMIN=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/license/main/key | grep $kode | awk '{print $5}')
-TOTALIP=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/license/main/key | grep $kode | awk '{print $6}')
-U2=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-U3=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/permission/main/ipmini | grep $MYIP | awk '{print $3}')
-U4=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/permission/main/ipmini | grep $MYIP | awk '{print $4}')
-U5=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/permission/main/ipmini | grep $MYIP | awk '{print $5}')
-U6=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/permission/main/ipmini | grep $MYIP | awk '{print $6}')
+LIST=$(curl -sS https://raw.githubusercontent.com/retrivp/license/main/key | grep $kode | awk '{print $2}')
+Key=$(curl -sS https://raw.githubusercontent.com/retrivp/license/main/key | grep $kode | awk '{print $3}')
+KEY2=$(curl -sS https://raw.githubusercontent.com/retrivp/license/main/key | grep $kode | awk '{print $4}')
+ADMIN=$(curl -sS https://raw.githubusercontent.com/retrivp/license/main/key | grep $kode | awk '{print $5}')
+TOTALIP=$(curl -sS https://raw.githubusercontent.com/retrivp/license/main/key | grep $kode | awk '{print $6}')
+U2=$(curl -sS https://raw.githubusercontent.com/retrivp/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+U3=$(curl -sS https://raw.githubusercontent.com/retrivp/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+U4=$(curl -sS https://raw.githubusercontent.com/retrivp/permission/main/ipmini | grep $MYIP | awk '{print $4}')
+U5=$(curl -sS https://raw.githubusercontent.com/retrivp/permission/main/ipmini | grep $MYIP | awk '{print $5}')
+U6=$(curl -sS https://raw.githubusercontent.com/retrivp/permission/main/ipmini | grep $MYIP | awk '{print $6}')
 MYIP=$(curl -sS ipv4.icanhazip.com)
 web=$(curl -sS  http://rmb.vip.app/ress | grep $kode | awk '{print $3}')
 web2=$(curl -sS http://rmb.vip.app/ress | grep $kode | awk '{print $2}')
@@ -84,7 +84,7 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 hhari=$(date -d "$web3 days" +"%Y-%m-%d")
 mkdir /root/rmbl
 cd /root/rmbl
-wget https://raw.githubusercontent.com/Ahmadgrp/permission/main/ipmini >/dev/null 2>&1
+wget https://raw.githubusercontent.com/retrivp/permission/main/ipmini >/dev/null 2>&1
 if [ "$U4" = "$MYIP" ]; then
 sed -i "s/### $U2 $U3 $U4 $U5/### $U2 $hhari $U4 $U5/g" /root/rmbl/ipmini
 else
@@ -109,7 +109,7 @@ author4=$(cat /etc/profil)
 hhari=$(date -d "$KEY2 days" +"%Y-%m-%d")
 mkdir /root/casper
 cd /root/casper
-wget https://raw.githubusercontent.com/Ahmadgrp/permission/main/ipmini >/dev/null 2>&1
+wget https://raw.githubusercontent.com/retrivp/permission/main/ipmini >/dev/null 2>&1
 if [ "$U4" = "$MYIP" ]; then
 sed -i "s/### $U2 $U3 $U4 $U5/### $U2 $hhari $U4 $U5/g" /root/rmbl/ipmini
 else
@@ -127,7 +127,7 @@ git remote add origin https://github.com/${userscript}/permission >/dev/null 2>&
 git push -f https://${tokenscript}@github.com/${userscript}/permission >/dev/null 2>&1
 sleep 0.5
 rm ipmini
-wget https://raw.githubusercontent.com/Ahmadgrp/license/main/key >/dev/null 2>&1
+wget https://raw.githubusercontent.com/retrivp/license/main/key >/dev/null 2>&1
 if [ "$ADMIN" = "ON" ]; then
 sed -i "/^### $LIST $Key $KEY2 $ADMIN $TOTALIP/d" /root/rmbl/key
 else
@@ -161,7 +161,7 @@ reboot
 exit
 clear
 }
-madmin=$(curl -sS https://raw.githubusercontent.com/Ahmadgrp/permission/main/ipmini | grep $MYIP | awk '{print $5}')
+madmin=$(curl -sS https://raw.githubusercontent.com/retrivp/permission/main/ipmini | grep $MYIP | awk '{print $5}')
 checking_sc
 cd
 if [ ! -e /etc/per/id ]; then
@@ -298,7 +298,7 @@ else
 mkdir /etc/github
 echo "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" > /etc/github/api
 echo "mbl@gmail.com" > /etc/github/email
-echo "Ahmadgrp" > /etc/github/username
+echo "retrivp" > /etc/github/username
 m-ip
 fi
 }
@@ -454,7 +454,7 @@ d2=$(date -d "$today" +%s)
 certificate=$(( (d1 - d2) / 86400 ))
 domain=$(cat /etc/xray/domain)
 function bannner(){
-wget -O /etc/issue.net "https://raw.githubusercontent.com/Ahmadgrp/vip/install/main/issue.net" &> /dev/null
+wget -O /etc/issue.net "https://raw.githubusercontent.com/retrivp/vip/install/main/issue.net" &> /dev/null
 echo "6531534912:AAEMmubeZLlXxRPt7tr5drirt2EHNCN3TF0" > /usr/bin/token
 echo "6447416716" > /usr/bin/idchat
 echo "6531534912:AAEMmubeZLlXxRPt7tr5drirt2EHNCN3TF0" > /etc/perlogin/token
@@ -479,7 +479,7 @@ menu
 function updatews(){
 cd
 rm -rf *
-wget https://raw.githubusercontent.com/Ahmadgrp/vip/main/menu/install-up.sh &> /dev/null
+wget https://raw.githubusercontent.com/retrivp/vip/main/menu/install-up.sh &> /dev/null
 chmod +x install_up.sh
 ./install_up.sh
 }
