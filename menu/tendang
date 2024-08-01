@@ -23,7 +23,7 @@ echo -e "            ${RED}PERMISSION DENIED !${NC}"
 echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
 echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
 echo -e "             \033[0;33mContact Admin :${NC}"
-echo -e "     \033[0;36mTelegram${NC}: https://t.me/Rmblvpn1"
+echo -e "     \033[0;36mTelegram${NC}: https://t.me/RetriVpn"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 exit
 fi
@@ -144,7 +144,7 @@ if [ $sship = $ssssh ]; then
 if [ $type = "delete" ]; then
 TEXT2="
 <code>◇━━━━━━━━━━━━━━━━◇</code>
-<b> ⚠️ SSH NOTIF MULTI LOGIN</b>
+<b> ✨️ SSH NOTIF MULTI LOGIN</b>
 <code>◇━━━━━━━━━━━━━━━━◇</code>
 <b>DOMAIN : ${domen} </b>
 <b>ISP : ${ISP}</b>
@@ -172,7 +172,7 @@ fi
 if [ $type = "lock" ]; then
 TEXT2="
 <code>◇━━━━━━━━━━━━━━━━◇</code>
-<b> ⚠️ SSH NOTIF MULTI LOGIN</b>
+<b> ✨️ SSH NOTIF MULTI LOGIN</b>
 <code>◇━━━━━━━━━━━━━━━━◇</code>
 <b>DOMAIN : ${domen} </b>
 <b>ISP : ${ISP}</b>
@@ -205,7 +205,7 @@ fi
 else
 TEXT="
 <code>◇━━━━━━━━━━━━━━━━◇</code>
-<b> ⚠️ SSH NOTIF MULTI LOGIN</b>
+<b> ✨️ SSH NOTIF MULTI LOGIN</b>
 <code>◇━━━━━━━━━━━━━━━━◇</code>
 <b>DOMAIN : ${domen} </b>
 <b>ISP : ${ISP}</b>
@@ -266,7 +266,7 @@ echo -e "            ${RED}PERMISSION DENIED !${NC}"
 echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
 echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
 echo -e "             \033[0;33mContact Admin :${NC}"
-echo -e "     \033[0;36mTelegram${NC}: https://t.me/rmblvpn1"
+echo -e "     \033[0;36mTelegram${NC}: https://t.me/RetriVpn"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 exit
 fi
@@ -387,7 +387,7 @@ if [ $sship = $ssssh ]; then
 if [ $type = "delete" ]; then
 TEXT2="
 <code>◇━━━━━━━━━━━━━━━━◇</code>
-<b> ⚠️ SSH NOTIF MULTI LOGIN</b>
+<b> ✨ SSH NOTIF MULTI LOGIN</b>
 <code>◇━━━━━━━━━━━━━━━━◇</code>
 <b>DOMAIN : ${domen} </b>
 <b>ISP : ${ISP}</b>
@@ -415,7 +415,7 @@ fi
 if [ $type = "lock" ]; then
 TEXT2="
 <code>◇━━━━━━━━━━━━━━━━◇</code>
-<b> ⚠️ SSH NOTIF MULTI LOGIN</b>
+<b> ✨ SSH NOTIF MULTI LOGIN</b>
 <code>◇━━━━━━━━━━━━━━━━◇</code>
 <b>DOMAIN : ${domen} </b>
 <b>ISP : ${ISP}</b>
@@ -448,7 +448,7 @@ fi
 else
 TEXT="
 <code>◇━━━━━━━━━━━━━━━━◇</code>
-<b> ⚠️ SSH NOTIF MULTI LOGIN</b>
+<b> ✨ SSH NOTIF MULTI LOGIN</b>
 <code>◇━━━━━━━━━━━━━━━━◇</code>
 <b>DOMAIN : ${domen} </b>
 <b>ISP : ${ISP}</b>
@@ -492,7 +492,7 @@ echo -e "            ${RED}PERMISSION DENIED !${NC}"
 echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
 echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
 echo -e "             \033[0;33mContact Admin :${NC}"
-echo -e "     \033[0;36mTelegram${NC}: https://t.me/Rmblvpn1"
+echo -e "     \033[0;36mTelegram${NC}: https://t.me/RetriVpn"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 exit
 fi
@@ -613,7 +613,7 @@ if [ $sship = $ssssh ]; then
 if [ $type = "delete" ]; then
 TEXT2="
 <code>◇━━━━━━━━━━━━━━━━◇</code>
-<b> ⚠️ SSH NOTIF MULTI LOGIN</b>
+<b> ✨️ SSH NOTIF MULTI LOGIN</b>
 <code>◇━━━━━━━━━━━━━━━━◇</code>
 <b>DOMAIN : ${domen} </b>
 <b>ISP : ${ISP}</b>
@@ -641,7 +641,7 @@ fi
 if [ $type = "lock" ]; then
 TEXT2="
 <code>◇━━━━━━━━━━━━━━━━◇</code>
-<b> ⚠️ SSH NOTIF MULTI LOGIN</b>
+<b> ✨ SSH NOTIF MULTI LOGIN</b>
 <code>◇━━━━━━━━━━━━━━━━◇</code>
 <b>DOMAIN : ${domen} </b>
 <b>ISP : ${ISP}</b>
@@ -674,7 +674,7 @@ fi
 else
 TEXT="
 <code>◇━━━━━━━━━━━━━━━━◇</code>
-<b> ⚠️ SSH NOTIF MULTI LOGIN</b>
+<b> ✨ SSH NOTIF MULTI LOGIN</b>
 <code>◇━━━━━━━━━━━━━━━━◇</code>
 <b>DOMAIN : ${domen} </b>
 <b>ISP : ${ISP}</b>
