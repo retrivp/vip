@@ -51,6 +51,56 @@ systemctl enable vnstat
 rm -f /root/vnstat-2.6.tar.gz
 rm -rf /root/vnstat-2.6
 
+# // Menginstall SSLH
+apt -y install sslh
+rm -f /etc/default/sslh
+cat> /etc/default/sslh << END
+RUN=yes
+DAEMON=/usr/sbin/sslh
+DAEMON_OPTS="--listen 0.0.0.0:443 --tls 127.0.0.1:777 --http 127.0.0.1:700 --openvpn 127.0.0.1:1194 --ssh 127.0.0.1:22 --anyprot 127.0.0.1:443 --pidfile /var/run/sslh/sslh.pid -n"
+END
+
+apt install haproxy -y
+rm -fr /etc/haproxy/haproxy.cfg
+cat >/etc/haproxy/haproxy.cfg <<HAH
+global
+       tune.ssl.default-dh-param 2048
+       tune.h2.initial-window-size 2147483647
+
+defaults
+    log global
+    mode tcp
+    option tcplog
+    option forwardfor
+    timeout connect 5000
+    timeout client 24h
+    timeout server 24h
+    errorfile 400 /etc/haproxy/errors/400.http
+    errorfile 403 /etc/haproxy/errors/403.http
+    errorfile 408 /etc/haproxy/errors/408.http
+    errorfile 500 /etc/haproxy/errors/500.http
+    errorfile 502 /etc/haproxy/errors/502.http
+    errorfile 503 /etc/haproxy/errors/503.http
+    errorfile 504 /etc/haproxy/errors/504.http
+
+frontend ssh-ssl
+    bind *:777 ssl crt /etc/xray/funny.pem
+    mode tcp
+    option tcplog
+    use_backend openresty_http if HTTP
+    default_backend ssh-backend
+
+backend ssh-backend
+    mode tcp
+    option tcplog
+    server ssh-server 127.0.0.1:22
+
+backend openresty_http
+    mode http
+    server http1 127.0.0.1:18020 send-proxy check
+HAH
+clear
+
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 yellow "Dependencies successfully installed..."
 sleep 1
