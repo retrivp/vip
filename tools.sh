@@ -97,7 +97,7 @@ frontend ssh-ssl
 backend ssh-backend
     mode tcp
     option tcplog
-    server ssh-server 127.0.0.1:22
+    server ssh-server 127.0.0.1:143
 
 backend openresty_http
     mode http
