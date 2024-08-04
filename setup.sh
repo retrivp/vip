@@ -338,7 +338,7 @@ clear
 echo -e  "${tyblue}┌──────────────────────────────────────────┐${NC}"
 echo -e  "${tyblue}│              \033[1;37mTERIMA KASIH                ${tyblue}│${NC}"
 echo -e  "${tyblue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${tyblue}│${NC}"
-echo -e  "${tyblue}│                \033[1;37mDARI SAYA                 ${tyblue}│${NC}"
+echo -e  "${tyblue}│                \033[1;37mDARI RETRI PROJECT                ${tyblue}│${NC}"
 echo -e  "${tyblue}└──────────────────────────────────────────┘${NC}"
 echo " "
 until [[ $dnss =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
@@ -531,7 +531,7 @@ clear
 echo -e  "${tyblue}┌──────────────────────────────────────────┐${NC}"
 echo -e  "${tyblue}│              \033[1;37mTERIMA KASIH                ${tyblue}│${NC}"
 echo -e  "${tyblue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${tyblue}│${NC}"
-echo -e  "${tyblue}│                \033[1;37mDARI SAYA                 ${tyblue}│${NC}"
+echo -e  "${tyblue}│                \033[1;37mDARI RETRI PROJECT                 ${tyblue}│${NC}"
 echo -e  "${tyblue}└──────────────────────────────────────────┘${NC}"
 echo " "
 until [[ $dns1 =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
@@ -546,7 +546,7 @@ echo ""
 echo -e  "${tyblue}┌──────────────────────────────────────────┐${NC}"
 echo -e  "${tyblue}│              \033[1;37mTERIMA KASIH                ${tyblue}│${NC}"
 echo -e  "${tyblue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${tyblue}│${NC}"
-echo -e  "${tyblue}│                \033[1;37mDARI SAYA                 ${tyblue}│${NC}"
+echo -e  "${tyblue}│                \033[1;37mDARI RETRI PROJECT                ${tyblue}│${NC}"
 echo -e  "${tyblue}└──────────────────────────────────────────┘${NC}"
 echo " "
 until [[ $dns2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -745,8 +745,8 @@ fun_bar 'res9'
 function iinfo(){
 domain=$(cat /etc/xray/domain)
 TIMES="10"
-CHATID="-1001568029932"
-KEY="6571846319:AAFaNBSeRHOmAG2jRLCMUAqo9EuC9XiW420"
+CHATID="-1001651092499"
+KEY="7433666233:AAH9Wd55izpQSa20az0dVBaJ8lBaX06U2CE"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ISP=$(cat /etc/xray/isp)
 CITY=$(cat /etc/xray/city)
@@ -762,19 +762,17 @@ EXP=$(( (d1 - d2) / 86400 ))
 
 TEXT="
 <code>━━━━━━━━━━━━━━━━━━━━</code>
-<code>⚠️ AUTOSCRIPT PREMIUM ⚠️</code>
+<code>✨ AUTOSCRIPT PREMIUM ✨</code>
 <code>━━━━━━━━━━━━━━━━━━━━</code>
 <code>NAME : </code><code>${author}</code>
 <code>TIME : </code><code>${TIME} WIB</code>
-<code>DOMAIN : </code><code>${domain}</code>
-<code>IP : </code><code>${MYIP}</code>
 <code>ISP : </code><code>${ISP} $CITY</code>
 <code>OS LINUX : </code><code>${MODEL2}</code>
 <code>RAM : </code><code>${RAMMS} MB</code>
 <code>EXP SCRIPT : </code><code>$EXP Days</code>
 <code>━━━━━━━━━━━━━━━━━━━━</code>
 <i> Notifikasi Installer Script...</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"🔥ᴏʀᴅᴇʀ","url":"https://t.me/Rmblvpn1"},{"text":"🔥GRUP","url":"https://t.me/Configopok"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"🔥ᴏʀᴅᴇʀ","url":"https://t.me/RetriVpn"},{"text":"🔥GRUP","url":"https://t.me/retrivpnstore"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 }
