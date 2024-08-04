@@ -4,34 +4,6 @@
 # Link Hosting Kalian
 RMBL="wget --no-check-certificate http://rmblvpn.my.id/"
 
-wget --no-check-certificate -O /usr/local/bin/ws-dropbear http://rmblvpn.my.id/sshws/ws-dropbear
-chmod +x /usr/local/bin/ws-dropbear
-
-# Installing Service
-cat > /etc/systemd/system/ws-nontls.service << END
-[Unit]
-Description=Python Proxy Mod By RMBL
-Documentation=https://t.me/rmblvpn
-After=network.target nss-lookup.target
-
-[Service]
-Type=simple
-User=root
-CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
-AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
-NoNewPrivileges=true
-ExecStart=/usr/bin/python -O /usr/local/bin/ws-dropbear
-Restart=on-failure
-
-[Install]
-WantedBy=multi-user.target
-END
-
-systemctl daemon-reload
-systemctl enable ws-dropbear.service
-systemctl start ws-dropbear.service
-systemctl restart ws-dropbear.service
-
 wget --no-check-certificate -O /usr/local/bin/ws-ovpn http://rmblvpn.my.id/sshws/ws-ovpn.py
 chmod +x /usr/local/bin/ws-ovpn
 
@@ -48,7 +20,7 @@ User=root
 CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 NoNewPrivileges=true
-ExecStart=/usr/bin/python -O /usr/local/bin/ws-ovpn 2086
+ExecStart=/usr/bin/python3 -O /usr/local/bin/ws-ovpn 2086
 Restart=on-failure
 
 [Install]
@@ -59,7 +31,7 @@ systemctl daemon-reload
 systemctl enable ws-ovpn
 systemctl restart ws-ovpn
 
-wget --no-check-certificate -O /usr/local/bin/ws-stunnel http://rmblvpn.my.id/sshws/ws-stunnel
+wget --no-check-certificate -O /usr/local/bin/ws-stunnel "https://raw.githubusercontent.com/DindaPutriFN/WebSocket-Proxy/main/ws.py"
 chmod +x /usr/local/bin/ws-stunnel
 
 # Installing Service
@@ -75,7 +47,7 @@ User=root
 CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 NoNewPrivileges=true
-ExecStart=/usr/bin/python -O /usr/local/bin/ws-stunnel
+ExecStart=/usr/bin/python3 -O /usr/local/bin/ws-stunnel
 Restart=on-failure
 
 [Install]
