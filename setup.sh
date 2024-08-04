@@ -772,7 +772,7 @@ TEXT="
 <code>EXP SCRIPT : </code><code>$EXP Days</code>
 <code>━━━━━━━━━━━━━━━━━━━━</code>
 <i> Notifikasi Installer Script...</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"🔥ᴏʀᴅᴇʀ","url":"https://t.me/Rmblvpn1"},{"text":"🔥GRUP","url":"https://t.me/Configopok"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"🔰Order","url":"https://t.me/RetriVpn"},{"text":"🔰Grup","url":"https://t.me/retrivpnstore"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 }
