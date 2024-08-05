@@ -762,7 +762,7 @@ EXP=$(( (d1 - d2) / 86400 ))
 
 TEXT="
 <code>━━━━━━━━━━━━━━━━━━━━</code>
-<code>⚠️ AUTOSCRIPT PREMIUM ⚠️</code>
+<code>✨ AUTOSCRIPT PREMIUM ✨</code>
 <code>━━━━━━━━━━━━━━━━━━━━</code>
 <code>NAME : </code><code>${author}</code>
 <code>TIME : </code><code>${TIME} WIB</code>
